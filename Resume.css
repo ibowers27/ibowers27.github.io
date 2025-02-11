@@ -107,7 +107,7 @@ a {
 }
 
 .profile_name_firstName {
-	color: white;
+	color: black;
 	font-weight: 200;
 	font-size: clamp(2rem, 8vw, 4rem);
 	text-transform: uppercase;
