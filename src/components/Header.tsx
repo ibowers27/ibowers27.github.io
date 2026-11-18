@@ -1,4 +1,4 @@
-import type { Theme } from '../hooks/useTheme';
+import type { Theme } from "../hooks/useTheme";
 
 interface HeaderProps {
   theme: Theme;
@@ -6,10 +6,10 @@ interface HeaderProps {
 }
 
 const navLinks = [
-  { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Contact', href: '#contact' },
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ];
 
 function Header({ theme, onToggleTheme }: HeaderProps) {
@@ -25,8 +25,12 @@ function Header({ theme, onToggleTheme }: HeaderProps) {
           </a>
         ))}
       </nav>
-      <button className="theme-toggle" onClick={onToggleTheme} aria-label="Toggle color theme">
-        {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
+      <button
+        className="theme-toggle"
+        onClick={onToggleTheme}
+        aria-label="Toggle color theme"
+      >
+        {theme === "light" ? "🌙" : "☀️"}
       </button>
     </header>
   );

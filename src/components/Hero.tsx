@@ -4,14 +4,15 @@ function Hero() {
   return (
     <section className="hero" id="top">
       <p className="eyebrow">
-        Computer Science BA Graduate · New College of Florida
+        Computer Science BA Graduate · Biology & Applied Math · New College of
+        Florida
       </p>
       <h1>Hi, I'm Ivy.</h1>
       <p className="hero-lead">
         I build interactive, user-focused software for the web, mobile, and VR,
-        from a real-time multiplayer game to a conservation simulation used in
-        an annual university study. I've also led a four-person development team
-        as project manager and lead full-stack developer.
+        from a real-time multiplayer game to a marine conservation simulation
+        used in an annual university study. I've also led a four-person
+        development team as project manager and lead full-stack developer.
       </p>
       <div className="hero-actions">
         <a className="button button-primary" href="#projects">
