@@ -28,6 +28,6 @@ export const skills: SkillGroup[] = [
   },
   {
     name: 'Tools',
-    items: ['Git & GitHub', 'GitHub Actions', 'Vite', 'Jest', 'ESLint', 'Prettier'],
+    items: ['Git & GitHub', 'GitHub Actions', 'Vite', 'Jest'],
   },
 ];

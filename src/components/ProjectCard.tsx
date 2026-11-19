@@ -1,12 +1,27 @@
-import type { Project } from '../data/projects';
+import { useState } from "react";
+import type { Project } from "../data/projects";
+import ProjectMedia from "./ProjectMedia";
 
 interface ProjectCardProps {
   project: Project;
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
+  const [hovered, setHovered] = useState(false);
+
   return (
-    <article className="card project-card">
+    <article
+      className="card project-card"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {project.media && (
+        <ProjectMedia
+          media={project.media}
+          title={project.title}
+          hovered={hovered}
+        />
+      )}
       <span className="project-type">{project.type}</span>
       <h3>{project.title}</h3>
       <p className="project-tagline">{project.tagline}</p>

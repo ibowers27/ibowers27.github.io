@@ -1,13 +1,11 @@
-// To add your photo: put it in the public/ folder (for example public/ivy.jpg)
-// and set PHOTO_URL to "/ivy.jpg". Leave it empty to show your initials instead.
-const PHOTO_URL = "";
-
 const whoami = [
-  { key: "role", value: "full-stack & VR developer" },
-  { key: "studied", value: "CS + biology + applied math" },
-  { key: "focus", value: "interactive, user-facing software" },
-  { key: "building", value: "this portfolio (React + TypeScript)" },
-  { key: "playing", value: "Valorant" },
+  { key: "studied", value: "CS w/ biology + applied math" },
+  { key: "learning", value: "Unreal Engine + Roblox Development" },
+  {
+    key: "passion",
+    value: "User-centered software that solves real-world problems",
+  },
+  { key: "playing", value: "Minecraft, Valorant, or Stardew Valley" },
 ];
 
 function About() {
@@ -18,40 +16,25 @@ function About() {
       </h2>
       <div className="about-grid">
         <div className="about-text">
-          {/* Draft: rewrite these in your own voice. */}
           <p>
             I studied computer science alongside biology and applied
-            mathematics, which is why so much of my work sits where software
-            meets science: an app that helps people identify local wildlife, and
-            a VR simulation that teaches students how human activity endangers
-            manatees.
+            mathematics, so I tend to see software as a way to understand and
+            improve the world around us. Everything I build is made with the
+            hope of making people's lives easier or more fun.
           </p>
           <p>
-            I'm happiest building things people interact with, whether that's a
-            real-time multiplayer game, a mobile app, or a VR experience. I've
-            also enjoyed the people side of software, leading a four-person team
-            as project manager and teaching as a computer science TA.
+            I'm always picking up new side projects or trying to build a new
+            skill. Right now, I'm coding a product stock tracker for one of my
+            favorite brands, experimenting with asset building for Roblox, and
+            transferring my Unity knowledge to Unreal Engine.
+          </p>
+          <p>
+            When I'm not coding, you'll probably find me gaming, reading, or
+            hanging out with my pets, Harry and Yoko.
           </p>
         </div>
 
         <div className="about-side">
-          {PHOTO_URL ? (
-            <img
-              className="about-photo"
-              src={PHOTO_URL}
-              alt="Ivy Bowers"
-              width={160}
-              height={160}
-            />
-          ) : (
-            <div
-              className="about-photo about-photo-placeholder"
-              aria-hidden="true"
-            >
-              IB
-            </div>
-          )}
-
           <div className="terminal" aria-label="Quick facts about Ivy">
             <div className="terminal-bar">
               <span className="terminal-dots" aria-hidden="true">
@@ -61,23 +44,28 @@ function About() {
               </span>
               <span className="terminal-title">ivy@portfolio</span>
             </div>
-            <pre className="terminal-body">
-              <code>
-                <span className="terminal-comment"># whoami</span>
-                {"\n"}
+            <div className="terminal-body">
+              <p className="terminal-comment"># whoami</p>
+              <dl className="terminal-lines">
                 {whoami.map((line, index) => (
-                  <span key={line.key}>
-                    <span className="terminal-key">{line.key.padEnd(9)}</span>
-                    <span className="terminal-arrow">→ </span>
-                    {line.value}
-                    {index === whoami.length - 1 && (
-                      <span className="terminal-cursor" aria-hidden="true" />
-                    )}
-                    {"\n"}
-                  </span>
+                  <div key={line.key} className="terminal-line">
+                    <dt className="terminal-key">{line.key}</dt>
+                    <dd>
+                      <span className="terminal-arrow">→</span>
+                      <span>
+                        {line.value}
+                        {index === whoami.length - 1 && (
+                          <span
+                            className="terminal-cursor"
+                            aria-hidden="true"
+                          />
+                        )}
+                      </span>
+                    </dd>
+                  </div>
                 ))}
-              </code>
-            </pre>
+              </dl>
+            </div>
           </div>
         </div>
       </div>
