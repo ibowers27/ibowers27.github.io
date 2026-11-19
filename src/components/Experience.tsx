@@ -1,9 +1,11 @@
-import { experience } from '../data/experience';
+import { experience } from "../data/experience";
 
 function Experience() {
   return (
     <section className="section" id="experience">
-      <h2>Experience</h2>
+      <h2>
+        <span className="section-number">03</span> Experience
+      </h2>
       <ol className="timeline">
         {experience.map((item) => (
           <li key={item.title} className="timeline-item">

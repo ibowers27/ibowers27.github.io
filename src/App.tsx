@@ -1,3 +1,4 @@
+import About from './components/About';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
       <Header theme={theme} onToggleTheme={toggleTheme} />
       <main>
         <Hero />
+        <About />
         <Projects />
         <Experience />
         <Skills />

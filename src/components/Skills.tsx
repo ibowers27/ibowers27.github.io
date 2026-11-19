@@ -1,9 +1,11 @@
-import { skills } from '../data/skills';
+import { skills } from "../data/skills";
 
 function Skills() {
   return (
     <section className="section" id="skills">
-      <h2>Skills</h2>
+      <h2>
+        <span className="section-number">04</span> Skills
+      </h2>
       <div className="skills-grid">
         {skills.map((group) => (
           <div key={group.name} className="card">

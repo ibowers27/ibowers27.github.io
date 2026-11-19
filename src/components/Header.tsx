@@ -6,6 +6,7 @@ interface HeaderProps {
 }
 
 const navLinks = [
+  { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
@@ -28,7 +29,12 @@ function Header({ theme, onToggleTheme }: HeaderProps) {
       <button
         className="theme-toggle"
         onClick={onToggleTheme}
-        aria-label="Toggle color theme"
+        aria-label={
+          theme === "light" ? "Switch to dark mode" : "Switch to light mode"
+        }
+        title={
+          theme === "light" ? "Switch to dark mode" : "Switch to light mode"
+        }
       >
         {theme === "light" ? "🌙" : "☀️"}
       </button>

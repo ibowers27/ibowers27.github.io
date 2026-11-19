@@ -3,9 +3,13 @@ const RESUME_URL = "/Ivy_Bowers_Resume.pdf";
 function Hero() {
   return (
     <section className="hero" id="top">
+      <p className="availability">
+        <span className="availability-dot" aria-hidden="true" />
+        Open to entry-level roles
+      </p>
       <p className="eyebrow">
-        Computer Science BA Graduate · Biology & Applied Math · New College of
-        Florida
+        Computer Science BA Graduate · Biology &amp; Applied Math · New College
+        of Florida
       </p>
       <h1>Hi, I'm Ivy.</h1>
       <p className="hero-lead">

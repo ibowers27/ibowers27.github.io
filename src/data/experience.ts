@@ -7,12 +7,12 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    title: 'VR Game Developer',
-    org: 'New College of Florida & Environmental Discovery Awards Program',
-    dates: 'Jul 2025 – May 2026',
+    title: 'Virtual Reality Software Engineer',
+    org: 'Environmental Discovery Awards Program (with New College of Florida)',
+    dates: 'Jul – Aug 2025 · Apr – May 2026',
     points: [
-      'EDAP intern (summer 2025), then rehired as a research assistant to finish features and hand off the project.',
-      'Built core gameplay mechanics in Unity/C# and managed GitHub merges for the team.',
+      'Built core gameplay mechanics for a manatee-conservation VR simulation in Unity/C# and managed GitHub merges for the team.',
+      'Returned in 2026 to verify per-session data tracking for new scenes, prepare Meta Quest 2/3 headsets for the user study, and hand off the project.',
     ],
   },
   {
@@ -33,11 +33,12 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: 'XR Lab Researcher',
-    org: 'Western Kentucky University',
+    title: 'Virtual Reality Programmer & 3D Artist',
+    org: 'WKU XR Research Lab',
     dates: 'Aug – Dec 2022',
     points: [
-      'Modeled campus buildings in Blender for a VR tour; poster won 2nd place at the ACM Mid-Southeast Conference.',
+      "On a team of three, built an interactive VR tour of WKU's campus as it is today and as it was in 1906, teaching students about the university's history and the communities its expansion affected.",
+      'Modeled campus buildings in Blender; our poster won 2nd place at the ACM Mid-Southeast Conference.',
     ],
   },
 ];
