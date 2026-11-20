@@ -1,8 +1,5 @@
 const RESUME_URL = "/Ivy_Bowers_Resume.pdf";
-
-// To add your photo: put it in the public/ folder (for example public/ivy.jpg)
-// and set PHOTO_URL to "/ivy.jpg". Leave it empty to show your initials instead.
-const PHOTO_URL = "";
+const PHOTO_URL = "/ivy.jpg";
 
 function Hero() {
   return (
